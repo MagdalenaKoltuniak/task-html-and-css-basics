@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -17,17 +17,17 @@
 <body>
     <header class="header container">
         <div class="header__nav box">
-            <a class="header__logo" href="/"><img src="./images/logo.svg" alt="logo nova"></a>
+            <a class="header__logo" href="/"><img class="header__image" src="./images/logo.svg" alt="logo nova"></a>
 
-            <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li><a class="header__menu-link" href="">The Team</a></li>
-                    <li><a class="header__menu-link" href="">Pricing</a></li>
-                    <li><a class="header__menu-link" href="">Features</a></li>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a class="menu__link" href="">The Team</a></li>
+                    <li><a class="menu__link" href="">Pricing</a></li>
+                    <li><a class="menu__link" href="">Features</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="header__cta box">
+        <article class="header__cta box">
             <div class="header__cta-description">
                 <h1 class="header__title">Beautiful Free Nova <br> template</h1>
                 <p class="header__text">A top notch premium quality template for your next web project.</p>
@@ -38,46 +38,45 @@
                     <img class="header__image" src="./images/screen.png" alt="screen poglądowej strony">
                 </div>
             </div>
-        </div>
+        </article>
     </header>
     <main>
         <section class="features container">
-            <div class="features__header box">
+            <header class="features__header box">
                 <h2 class="features__title">Features</h2>
-            </div>
-            <div class="features__cards box">
-                <div class="feature-card">
+            </header>
+            <ul class="features__cards box">
+                <li class="feature-card">
                     <div class="feature-card__bg">
                         <img class="feature-card__icon" src="./images/responsive.svg" alt="phone icon">
                     </div>
                     <h3 class="feature-card__title">Fully responsive</h3>
                     <p class="feature-card__description">Looks amazing on any device: smartphone, tablet, laptop and
                         desktop.</p>
-                </div>
-                <div class="feature-card">
+                </li>
+                <li class="feature-card">
                     <div class="feature-card__bg">
                         <img class="feature-card__icon" src="./images/customizable.svg" alt="customizable icon">
                     </div>
                     <h3 class="feature-card__title">Customizable</h3>
                     <p class="feature-card__description">Change the colors, pictures or any of the sections to suit
                         your needs.</p>
-                </div>
-                <div class="feature-card">
+                </li>
+                <li class="feature-card">
                     <div class="feature-card__bg">
                         <img class="feature-card__icon" src="./images/design.svg" alt="design icon">
                     </div>
                     <h3 class="feature-card__title">Slick and beautiful design</h3>
                     <p class="feature-card__description">Trendy and fresh design, fits any website.</p>
-                </div>
-
-            </div>
+                </li>
+            </ul>
         </section>
 
-        <section class="logos container">
+        <aside class="logos container">
             <div class="logos__box box">
                 <img class="logos__image" src="./images/logos.png" alt="logos">
             </div>
-        </section>
+        </aside>
 
         <section class="usage container">
             <div class="usage__box box">
@@ -93,13 +92,13 @@
         </section>
 
         <section class="pricing container">
-            <div class="pricing__header box">
+            <header class="pricing__header box">
                 <h2 class="pricing__title">Choose your pricing plan</h2>
                 <p class="pricing__subtitle">Pick any of our super affordable pricing plans</p>
-            </div>
+            </header>
 
-            <div class="pricing__options box">
-                <div class="pricing-card">
+            <ul class="pricing__options box">
+                <li class="pricing-card">
                     <h3 class="pricing-card__title">Basic</h3>
                     <p class="pricing-card__price"><span class="pricing-card__price-value">$15</span>per month</p>
                     <ul class="pricing-card__list">
@@ -107,8 +106,8 @@
                         <li>2 Additional Developers</li>
                     </ul>
                     <button class="pricing-card__btn">Get Started</button>
-                </div>
-                <div class="pricing-card pricing-card--active">
+                </li>
+                <li class="pricing-card pricing-card--active">
                     <h3 class="pricing-card__title">Agency</h3>
                     <p class="pricing-card__price"><span class="pricing-card__price-value">$55</span>per month</p>
                     <ul class="pricing-card__list">
@@ -117,8 +116,8 @@
                         <li>Unlimited Support</li>
                     </ul>
                     <button class="pricing-card__btn">Get Started</button>
-                </div>
-                <div class="pricing-card">
+                </li>
+                <li class="pricing-card">
                     <h3 class="pricing-card__title">Pro</h3>
                     <p class="pricing-card__price"><span class="pricing-card__price-value">$75</span>per month</p>
                     <ul class="pricing-card__list">
@@ -128,16 +127,16 @@
                         <li>1.5GB Disk Space</li>
                     </ul>
                     <button class="pricing-card__btn">Get Started</button>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
 
         <section class="team container">
-            <div class="team__header box">
+            <header class="team__header box">
                 <h2 class="team__title">The team</h2>
-            </div>
-            <div class="team__members box">
-                <div class="team-card">
+            </header>
+            <ul class="team__members box">
+                <li class="team-card">
                     <img class="team-card__image" src="./images/cto.png" alt="photo of Johnny B Good">
                     <h3 class="team-card__role">CTO</h3>
                     <p class="team-card__name">Johnny B Good</p>
@@ -150,8 +149,8 @@
                             <img src="./images/team-facebook.svg" alt="Facebook icon">
                         </a>
                     </div>
-                </div>
-                <div class="team-card">
+                </li>
+                <li class="team-card">
                     <img class="team-card__image" src="./images/ceo.png" alt="photo of Johnny B Good">
                     <h3 class="team-card__role">CEO</h3>
                     <p class="team-card__name">Roll Over Beethoven</p>
@@ -164,8 +163,8 @@
                             <img src="./images/team-facebook.svg" alt="Facebook icon">
                         </a>
                     </div>
-                </div>
-                <div class="team-card">
+                </li>
+                <li class="team-card">
                     <img class="team-card__image" src="./images/cfo.png" alt="photo of Johnny B Good">
                     <h3 class="team-card__role">CFO</h3>
                     <p class="team-card__name">Chuck Berry</p>
@@ -178,8 +177,8 @@
                             <img src="./images/team-facebook.svg" alt="Facebook icon">
                         </a>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="footer container">
